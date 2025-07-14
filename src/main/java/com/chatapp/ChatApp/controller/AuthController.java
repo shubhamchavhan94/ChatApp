@@ -48,7 +48,7 @@ public class AuthController {
                 .password(passwordEncoder.encode(registerRequest.getPassword())) // In a real application, ensure to hash the password
                 .email(registerRequest.getEmail())
                 .status(Status.ONLINE)
-                .last_seen(LocalDateTime.now())
+                .lastSeen(LocalDateTime.now())
                 .build();
 
         userRepository.save(user);
