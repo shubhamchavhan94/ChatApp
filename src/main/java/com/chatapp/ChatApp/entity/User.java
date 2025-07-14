@@ -34,6 +34,6 @@ public class User {
     @Enumerated(EnumType.STRING)
     private Status status;
 
-    @Column(nullable = false)
-    private LocalDateTime last_seen;
+    @Column(name = "last_seen", nullable = false)
+    private LocalDateTime lastSeen;
 }
